@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,14 +9,14 @@
 </head>
 
 <body>
-    <form action="" method="">
+    <form action="envoi.php" method="get">
         <fieldset>
             <legend>Pour me contacter</legend>
             <input type="text" name="nom" id="nom" placeholder="Nom*">
-            <input type="text" name="prénom" id="prénom" placeholder="Prénom*"><br>
-            <input type="email" name="émail" id="émail" placeholder="Email*"><br>
-            <textarea rows="5" cols="40" placeholder="Message"></textarea><br>
-            <input type="button" value="Envoyer">
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom*"><br>
+            <input type="email" name="email" id="email" placeholder="Email*"><br>
+            <textarea rows="5" cols="40" name="message" placeholder="Message"></textarea><br>
+            <input type="submit" id="envoi" value="Envoyer">
         </fieldset>
     </form>
 </body>
