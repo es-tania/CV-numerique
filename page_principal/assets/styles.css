@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Heaters';
+    src: url('fonts/heaters-webfont.woff2') format('woff2'),
+         url('fonts/heaters-webfont.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Hanleypro';
+    src: url('fonts/hanley_pro_slim-webfont.woff2') format('woff2'),
+         url('fonts/hanley_pro_slim-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* I) ACCUEIL */
+
+header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/accueil.png');
+    background-size: 100vw;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* a) Menu */
+
+.menu{
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    background-color: #00000094;
+    z-index: 1;
+
+    /* Autre type de menu */
+    
+    /* background-color: #d9b17970; */
+    /* border-radius: 20px;
+    margin-top: 5px; */
+}
+
+.menu ul{
+    font-family: 'Hanleypro';
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* b) Titre central */
+
+.titre{
+    position: relative;
+    width: max-content;
+    margin: auto;
+    position: relative;
+    top: 25vh;
+}
+
+.titre h1{
+    font-family: "Heaters";
+    font-size: 14rem;
+    color: white;
+}
+
+.titre h2{
+    font-family: "Heaters";
+    font-size: 4.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+/* c) Vague blanche */
+
+.wave{
+    position: absolute;
+    top: 65vh;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+/* II) PRESENTATION */
+
+.presentation{
+    width: 100vw;
+    height: 100vh;
+}
