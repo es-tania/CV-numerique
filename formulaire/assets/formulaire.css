@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Hanley Pro";
+    src: url("fonts/Hanley\ Pro\ Slim.woff2") format("woff2"), url("fonts/Hanley\ Pro\ Slim.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Hanley Pro";
+    src: url("fonts/Hanley\ Pro\ Slim\ Bold.woff2") format("woff2"), url("fonts/Hanley\ Pro\ Slim\ Bold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "RalewayItalic";
+    src: url("fonts/raleway-mediumitalic-webfont.woff2") format("woff2"), url("fonts/raleway-mediumitalic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/raleway-medium-webfont.woff2") format("woff2"), url("fonts/raleway-medium-webfont.woff") format("woff");
+    font-weight: normal;
+}
+
+body{
+    margin:0 ;
+}
+
+/* Formulaire de contact */
+
+fieldset{
+    width:max-content;
+    height: max-content;
+}
+
+legend{
+    font-family: "Hanley Pro";
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+input{
+    font-family: "RalewayItalic";
+    font-size: 1rem;
+    margin: 1vh;
+    margin-top: 2vh;
+    padding: 5px;
+    padding-left: 0.5vw;
+    border: black solid 1px;
+    height: 4vh;
+    border-radius: 3px;
+}
+
+#nom{
+    /* width: 15vw; */
+    /* width: 300px; */
+    width: 15.6vw;
+}
+
+#prenom{
+    /* width: 15vw; */
+    /* width: 300px; */
+    width: 15.6vw;
+}
+
+#email{
+    width: 33.36vw;
+    /* width: 640px; */
+}
+
+textarea{
+    margin: 0;
+    font-family: "RalewayItalic";
+    border: black solid 1px;
+    /* width: 100%; */
+    width: 33vw;
+    height: 20vh;
+    padding: 10px;
+    padding-left: 10px;
+    margin: 1vh;
+    margin-top: 2vh;
+    border-radius: 3px;
+}
+
+input[type=submit]{
+    font-family: "Raleway";
+    /* background-color: black; */
+    background-color: #D9B179;
+    border: transparent;
+    color: white;
+    margin-bottom: 2vh;
+    padding: 1vh;
+    width: 15vw;
+    border-radius: 3px;
+    height: 48px;
+
+}
+
+input[type=submit]:hover{
+    background-color: rgb(43, 43, 43);
+    /* color: black; */
+    border: black 2px solid;
+    cursor: pointer;
+}
