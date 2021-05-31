@@ -10,12 +10,13 @@
 </head>
 
 <body>
-    <header id="parallax">
+    <header class="parallax">
         <div class="menu">
             <ul>
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">Présentation</a></li>
-                <li><a href="#">Etudes</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#centre_interet">Centres d'intérêt</a></li>
+                <li><a href="#parcours">Parcours</a></li>
                 <li><a href="#">Compétences</a></li>
                 <li><a href="#">Portfolio</a></li>
             </ul>
@@ -27,7 +28,158 @@
         </div>
         <img src="assets/img/wave.svg" alt="" class="wave">
     </header>
-    <section class="presentation">
+
+    <section class="presentation" id="presentation">
+        <h1>Bienvenue sur mon cv interactif</h1>
+        <div class="description">
+            <div class="photo_profil">
+                <img src="assets/img/moi.jpg" alt="" class="moi">
+                <span class="cadre_noir"></span>
+                <span class="cadre_fond"></span>
+            </div>
+            <div class="texte_description">
+                <h2>Qui suis-je ?</h2>
+                <p>Alors voilà, je me présente, je m’appelle Esteves Tania, j’ai 18 ans et je suis actuellement
+                    étudiante en première année du DUT MMI à Champs-sur-Marne (aller à la rubrique étude pour en
+                    apprendre un peu plus sur cette formation). Pour faire court, je suis une personne investie et
+                    toujours de bonne humeur. Si vous êtes curieux et que vous voulez en apprendre un peu plus sur moi,
+                    il vous suffit de scroller. Mais si tout cela ne vous intéresse pas et que vous voulez allez au
+                    bref, vous retrouverez mon CV ci-joint ainsi que mon super LinkedIn.</p>
+                <div>
+                    <a href="https://www.linkedin.com/in/tania-esteves-8433111b7/" class="linkedin" target="_blank"><img
+                            src="assets/img/linkedin.svg" alt=""></a>
+                    <a href="assets/doc/cv_tania_esteves.pdf" class="cv" target="_blank"><img src="assets/img/cv.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="centre_interet" id="centre_interet">
+            <h1>Mes centres d'intérêts</h1>
+            <section>
+                <div class="dessin">
+                    <img src="assets/img/color-palette.svg" alt="">
+                    <p><b>Le dessin :</b> J’aime reproduire des dessins qui me plaisent que je voie sur les réseaux
+                        depuis début collège, par contre les inventés c’est une autre histoire (on va dire que je suis
+                        pas très doués à ça).</p>
+                </div>
+                <div class="manga">
+                    <img src="assets/img/world-book-day.svg" alt="">
+                    <p><b>Les mangas :</b> J’aime en lires, ainsi qu’en collectionner (plus de 120 de tout genre au
+                        compteur et je ne compte pas m’arrêter là !).</p>
+                </div>
+                <div class="serie">
+                    <img src="assets/img/tv-monitor.svg" alt="">
+                    <p>
+                        <b>Les animés/séries :</b> Principalement en VOSTFR, c’est bien pour apprendre de nouvelles
+                        langues. Pour les animés, je suis plus Shônen et Seinen, pour les séries quant à elle, je suis
+                        plus fantastique et science-fiction.
+                    </p>
+                </div>
+                <div class="photo">
+                    <img src="assets/img/photo-camera.svg" alt="">
+                    <p>
+                        <b>La photo :</b> Je ne suis pas une experte mais cela me plait d’immortaliser des moments, des
+                        paysages et bien d’autres choses et parfois de les retoucher pour apporter une petite touche
+                        différente à celles-ci.
+                    </p>
+                </div>
+                <div class="musique">
+                    <img src="assets/img/music.svg" alt="">
+                    <p>
+                        <b>La musique :</b> Cela me permet de me détendre et de passer de bons moments. J’écoute un peu
+                        de tous les styles mais principalement de la musique latino, de la pop américaines, des
+                        openings/ost. Qui n’aime pas écouter un peu de musique ?
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <div class="fond_parcours parallax" id="parcours">
+        <div>
+            <h1 class="parcours_titre">Parcours</h1>
+        </div>
+    </div>
+    <section class="parcours">
+        <div class="bloc1">
+            <div class="fond_noir">
+                <div class="fond_beige">
+                    <div class="texte_parcours">
+                        <h1>DUT MÉTIERS DU MULTIMÉDIA ET DE L'INTERNET (MMI)</h1>
+                        <h2>IUT Gustave Eiffel de Champs-sur-Marne | 93460</h2>
+                        <p>Le DUT MMI est actuellement une formation post bac de niveau bac+2 sui deviendra
+                            prochainement le
+                            BUT MMI de niveau bac+3.<br>
+                            Ses étudiants obtiennent une grande polyvalence dans le domaine du web et du multimédia.
+                            Elle
+                            permet d’avoir des compétences en communication, marketing digital, gestion de projet,
+                            intégration web, réseaux, programmation, infographie, UX design et en audiovisuel.<br>
+                            Le DUT MMI est une formation qui a une philosophie qui encourage le travail d’équipe,
+                            tout
+                            cela
+                            mené grâce à tous les projets qui sont proposés par les profs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <span class="trait"></span>
+        </div>
+        <div class="bloc2">
+            <span class="trait"></span>
+            <div class="fond_noir">
+                <div class="fond_beige">
+                    <div class="texte_parcours">
+                        <h1>Développeuse web pour AstronoMMI
+                        </h1>
+                        <h2>A Champs-sur-Marne | 93460</h2>
+                        <p>Dans le cadre du projet tuteuré de première année, AstronoMMI est un site actuellement en
+                            conception qui permettra de se renseigner sur les métiers qui peuvent être faits après
+                            MMI.<br>
+                            Il peut également servir de renseignement pour n'importe quelle personne qui s’intéresse au
+                            domaine de l'audiovisuel, de la communication, du développement et du design, et qui
+                            souhaiterait se renseigner sur les métiers qui peuvent être faits dans ces domaines. <br>
+                            Au sein de mon équipe qui est constituée de 4 personnes, j’occupe la place de développeuse
+                            backend, mais j’aide également au développement front.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bloc3">
+            <div class="fond_noir">
+                <div class="fond_beige">
+                    <div class="texte_parcours">
+                        <h1>Baccalauréat scientifique</h1>
+                        <h2>Lycée George Clémenceau de Villemomble | 93250</h2>
+                        <p style="margin-top: 0px;">(Mention Bien – Option Mathématique)</p>
+                    </div>
+                </div>
+            </div>
+            <span class="trait"></span>
+        </div>
+
+        <div class="rond_date">
+            <div class="date">
+                <span></span>
+                <h3>2020 - 2022</h3>
+            </div>
+            <span class="trait2"></span>
+            <div class="date">
+                <span></span>
+                <h3>janvier 2021<br>- juin 2021</h3>
+            </div>
+            <span class="trait2"></span>
+            <div class="date">
+                <span></span>
+                <h3>2020</h3>
+            </div>
+
+        </div>
+
+
+
+
+
 
     </section>
 

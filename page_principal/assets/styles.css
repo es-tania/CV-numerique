@@ -1,30 +1,37 @@
 @font-face {
     font-family: 'Heaters';
     src: url('fonts/heaters-webfont.woff2') format('woff2'),
-         url('fonts/heaters-webfont.woff') format('woff');
+        url('fonts/heaters-webfont.woff') format('woff');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Hanleypro';
     src: url('fonts/hanley_pro_slim-webfont.woff2') format('woff2'),
-         url('fonts/hanley_pro_slim-webfont.woff') format('woff');
+        url('fonts/hanley_pro_slim-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-*{
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+        url('fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 /* I) ACCUEIL */
 
-header{
+header {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -36,7 +43,7 @@ header{
 
 /* a) Menu */
 
-.menu{
+.menu {
     position: fixed;
     width: 100%;
     height: fit-content;
@@ -45,13 +52,13 @@ header{
     z-index: 1;
 
     /* Autre type de menu */
-    
+
     /* background-color: #d9b17970; */
     /* border-radius: 20px;
     margin-top: 5px; */
 }
 
-.menu ul{
+.menu ul {
     font-family: 'Hanleypro';
     color: white;
     font-size: 1.3rem;
@@ -59,20 +66,20 @@ header{
     justify-content: space-around;
 }
 
-.menu li a{
+.menu li a {
     color: white;
     text-decoration: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.36);
 }
 
-.menu li a:hover{
+.menu li a:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 /* b) Titre central */
 
-.titre{
+.titre {
     position: relative;
     width: max-content;
     margin: auto;
@@ -80,13 +87,13 @@ header{
     top: 25vh;
 }
 
-.titre h1{
+.titre h1 {
     font-family: "Heaters";
     font-size: 14rem;
     color: white;
 }
 
-.titre h2{
+.titre h2 {
     font-family: "Heaters";
     font-size: 4.5rem;
     color: white;
@@ -98,7 +105,7 @@ header{
 
 /* c) Vague blanche */
 
-.wave{
+.wave {
     position: absolute;
     top: 65vh;
     bottom: 0;
@@ -108,7 +115,355 @@ header{
 
 /* II) PRESENTATION */
 
-.presentation{
+.presentation {
     width: 100vw;
+    /* border: red solid; */
+}
+
+.description {
+    position: relative;
+    height: 80vh;
+    /* border: black solid; */
+    display: flex;
+    justify-content: center;
+}
+
+/* a) Images */
+
+.photo_profil{
+    position: relative;
+    /* border: pink solid; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3vw;
+}
+
+.photo_profil img{
+    height: 52vh;
+    /* width: 20vw; */
+    z-index: 0;
+    object-fit: contain;
+}
+
+.cadre_noir{
+    position: absolute;
+    border: black solid 2px;
+    display: block;
+    width: 20vw;
+    height: 52.5vh;
+    z-index: -2;
+    transform: rotate(-4.4deg);
+}
+
+.cadre_fond{
+    position: absolute;
+    display: block;
+    width: 19.4vw;
+    height: 51.5vh;
+    z-index: -1;
+    background: #D9B179;
+    transform: rotate(6.36deg);
+}
+
+
+/* b) Textes */
+
+.presentation>h1 {
+    font-family: 'Hanleypro';
+    text-align: center;
+    font-weight: normal;
+    font-size: 3.5rem;
+    margin-top: 3vh;
+}
+
+.texte_description{
+    /* border: springgreen solid; */
+    width: 41.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texte_description h2{
+    font-family: 'Hanleypro';
+    font-weight: normal;
+    font-size: 2.25rem;
+}
+
+.texte_description p{
+    font-family: 'Raleway';
+    font-size: 1rem;
+}
+
+.texte_description div{
+    width: 205px;
+    /* border: blue solid; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkedin img{
+    width: 70px;
+    height: 82px;
+}
+
+.cv img{
+    width: 82px;
+    height: 82px;
+}
+
+/* III) CENTRE D'INTERET */
+
+.centre_interet{
+    /* border: black solid; */
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+/* a) Texte */
+
+.centre_interet section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.centre_interet div{
+    /* border: red solid; */
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.centre_interet h1{
+    font-family: 'Hanleypro';
+    font-weight: normal;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.centre_interet p{
+    font-family: 'Raleway';
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+/* b) Icons */
+
+.centre_interet img{
+    /* border: springgreen solid; */
+    position: relative;
+    top: 0;
+    height: 15vh;
+    cursor: pointer;
+}
+
+.serie img{
+    margin-top: 2vh;
+}
+
+.serie P{
+    margin-top: 3vh;
+}
+
+/* IV) PARCOURS */
+
+/* a) Titre */
+
+.fond_parcours{
+    background-image: url('img/fond_parcours.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10vh;
+}
+
+.parcours_titre{
+    font-family: "Heaters";
+    font-size: 10rem;
+    color: white;
+    text-align: center;
+}
+
+/* b) Textes */
+
+.parcours h1{
+    font-family: 'Hanleypro';
+    font-weight: 700;
+    font-size: 1.35rem;
+}
+
+.parcours h2{
+    font-family: 'Hanleypro';
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.parcours p{
+    font-family: 'Raleway';
+    font-size: 0.9rem;
+    margin-top: 17px;
+}
+
+/* c) Rond et trait */
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEC68F;
+    box-shadow: inset 8px 9px 34px -8px #D6AB6E;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    text-align: center;
+}
+
+.date span{
+    width: 9vw;
+    height: 9vw;
+    border: 2px solid #000000;
+    position: absolute;
+    border-radius: 50%;
+    padding: 1vh;
+    background-color: white;
+    z-index: -2;
+}
+
+.parcours h3{
+    font-family: 'Hanleypro';
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1550px) {
+    .parcours h3{
+        font-size: 1.1rem;
+    }
+
+    .parcours p{
+        font-family: 'Raleway';
+        font-size: 0.7rem;
+        margin-top: 10px;
+    }
+
+    .parcours h1{
+        font-family: 'Hanleypro';
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    
+    .parcours h2{
+        font-family: 'Hanleypro';
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+}
+
+.trait{
+    position: relative;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 13vh;
+    height: 0;
+}
+
+.trait2{
+    position: relative;
+    border: 1px solid #000000;
+    height: 13vh;
+    width: 0;
+    z-index: -3;
+}
+
+/* d) Carte MMI */
+
+.texte_parcours{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    position: relative;
+    background-color: white;
+    margin: 1vh;
+    padding: 14px 13px 30px 26px;
+}
+
+.fond_beige{
+    width: 475px;
+    background: #EEC68F;
+}
+
+.fond_noir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 2px;
+    width: max-content;
+    padding: 1vh;
+}
+
+/* e) Positionnement des blocs */
+
+.bloc1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    width: 44vw;
+    z-index: -3;
+    left: 1vw;
+}
+
+.bloc2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    right: 0;
+    top: 31vh;
+    width: 44vw;
+    z-index: -3;
+    right: 1vw;
+}
+
+.bloc3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    width: 44vw;
+    z-index: -3;
+    top: 70vh;
+    left: 1vw;
+}
+
+@media screen and (min-width:1400px) {
+    .bloc1{
+        top: 3vh;
+    }
+}
+
+.rond_date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
     height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parcours{
+    position: relative;
+    height: 110vh;
 }
