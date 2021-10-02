@@ -24,7 +24,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -50,12 +50,6 @@ header {
     padding: 10px;
     background-color: #00000094;
     z-index: 1;
-
-    /* Autre type de menu */
-
-    /* background-color: #d9b17970; */
-    /* border-radius: 20px;
-    margin-top: 5px; */
 }
 
 .menu ul {
@@ -165,7 +159,6 @@ header {
     background: #D9B179;
     transform: rotate(6.36deg);
 }
-
 
 /* b) Textes */
 
@@ -611,7 +604,6 @@ header {
 }
 
 .projets {
-    /* border: red solid; */
     height: max-content;
     display: flex;
     flex-wrap: wrap;
@@ -620,7 +612,6 @@ header {
 }
 
 .portfolio-item {
-    /* border: pink solid; */
     margin-bottom: 30px;
     position: relative;
     border-radius: 100px;
@@ -635,14 +626,7 @@ header {
     }
 }
 
-/* 
-.image{
-    width: 25vw;
-    height: 35vh;
-} */
-
 .portfolio-item img {
-    /* height: 35vh; */
     filter: saturate(0%);
     object-fit: cover;
     display: inline-block;
@@ -728,28 +712,7 @@ header {
 
 /* b) Modal projets */
 
-/* .container {
-    background-color: #9191E9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-} */
-
-.popup_projets .button {
-    text-decoration: none;
-    font-size: 0.875rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    display: inline-block;
-    border-radius: 1.5rem;
-    background-color: #fff;
-    color: #9191E9;
-    padding: 1rem 2rem;
-}
-
-.popup_projets .popup {
+.popup {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -762,60 +725,198 @@ header {
     z-index: 2;
     visibility: hidden;
     opacity: 0;
-    overflow: hiden;
+    overflow: hidden;
     transition: 0.64s ease-in-out;
 }
 
-.popup_projets .popup-inner {
+.popup-inner {
     position: relative;
     bottom: -100vw;
     right: -100vh;
     display: flex;
-    align-items: center;
-    max-width: 800px;
-    max-height: 600px;
-    width: 60%;
-    height: 80%;
+    width: 75vw;
+    height: 83vh;
     background-color: #fff;
     transform: rotate(32deg);
     transition: 0.64s ease-in-out;
+    overflow: hidden;
+    padding: 1vw;
 }
 
-.popup_projets .popup__photo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 40%;
-    height: 100%;
+.bande_noir {
+    border: black solid;
+    width: 100%;
     overflow: hidden;
 }
 
-.popup_projets .popup__photo img {
-    width: auto;
-    height: 100%;
+.bande_noir h2 {
+    font-family: 'Hanleypro';
+    font-weight: 300;
+    font-size: 3rem;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 3vh;
 }
 
-.popup_projets .popup__text {
+/* Bloc vidéo */
+
+.bordure_video {
+    border: black solid;
+    padding: 10px;
+    margin-left: 3vw;
+    width: max-content;
+    height: max-content;
+}
+
+.bordure_video iframe {
+    width: 29vw;
+    height: 34vh;
+}
+
+.bordure_video img{
+    height: 34vh;
+}
+
+/* Bloc texte */
+
+.video_texte {
+    margin-bottom: 3vh;
+    display: flex;
+}
+
+.description_projet {
+    width: 35vw;
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
-    height: 100%;
-    padding: 4rem;
 }
 
-.popup_projets .popup__text h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    color: #0A0A0A;
+.description_projet p {
+    font-family: 'Raleway';
+    font-size: 1.125rem;
 }
 
-.popup_projets .popup__text p {
-    font-size: 0.875rem;
-    color: #686868;
-    line-height: 1.5;
+.bande_noir h3 {
+    font-family: 'Hanleypro';
+    font-weight: 300;
+    font-size: 2.313rem;
+    color: #000000;
+    margin-bottom: 1vh;
+}
+
+/* Bloc outils */
+
+.outils_titre {
+    margin-left: 5vw;
+}
+
+.logiciels {
+    position: relative;
+    display: flex;
+    padding-left: 3vw;
+}
+
+.logiciels h4 {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.logo_logiciel {
+    width: 6vw;
+}
+
+.logo_texte_logiciel {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3vw;
+}
+
+/* Bouton */
+
+.bouton_plus {
+    position: absolute;
+    right: 1vw;
+    bottom: 0;
+}
+
+.bouton_plus a, .description_projet a{
+    font-family: 'Hanleypro';
+    font-size: 1.875rem;
+    color: black;
+    text-decoration: none;
+}
+
+.description_projet a{
+    text-align: center;
+}
+
+.bouton_plus a, .description_projet a{
+    letter-spacing: 0.05rem;
+    transition: 0.5s all ease-in-out;
+    position: relative;
+    background: transparent;
+    margin-left: 5px;
+}
+
+.bouton_plus a:before, .description_projet a:before{
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    background: transparent;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 100%;
+    transition: 0.48s all ease-in-out;
+}
+
+.bouton_plus a:hover, .description_projet a:hover{
+    letter-spacing: 0.2rem;
+}
+
+.bouton_plus a:hover:before, .description_projet a:hover:before {
+    left: 25%;
+    right: 25%;
+}
+
+@media screen and (max-width:1380px) {
+    .bande_noir h2 {
+        font-size: 2rem;
+        margin-bottom: 2vh;
+    }
+
+    .description_projet p {
+        font-family: 'Raleway';
+        font-size: 0.8rem;
+    }
+
+    .bande_noir h3 {
+        font-family: 'Hanleypro';
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #000000;
+        margin-bottom: 1vh;
+    }
+
+    .logo_logiciel {
+        width: 5vw;
+    }
+
+    .logiciels h4 {
+        font-size: 1rem;
+    }
+
+    .description_projet a, .bouton_plus a{
+        font-size: 1.3rem;
+    }
 }
 
 .popup_projets .popup:target {
@@ -829,20 +930,173 @@ header {
     transform: rotate(0);
 }
 
+/* Croix pour fermer la popup */
 .popup_projets .popup__close {
     position: absolute;
-    right: -1rem;
-    top: -1rem;
-    width: 3rem;
-    height: 3rem;
-    font-size: 0.875rem;
-    font-weight: 300;
-    border-radius: 100%;
-    background-color: #0A0A0A;
+    right: 2vw;
+    top: 4vh;
     z-index: 4;
-    color: #fff;
-    line-height: 3rem;
-    text-align: center;
     cursor: pointer;
-    text-decoration: none;
 }
+
+/* VII) MES DESSINS */
+
+.dessins{
+    margin-bottom: 10vh;
+}
+
+.dessins h2{
+    font-family: 'Hanleypro';
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.wrapper {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 70vw;
+}
+
+.col {
+   width: 20vw;
+   padding: 0;
+   max-width: 100%;
+   border: black solid 2px;
+   padding: 1vh;
+   margin-left: 1vh;
+   margin-bottom: 1vh;
+}
+
+.wrapper img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+}
+
+.wrapper:hover img {
+    opacity: 0.5;
+}
+
+.col img:hover {
+    opacity: 1;
+}
+
+.colonne1{
+    position: relative;
+    top: 0;
+}
+
+
+/* Formulaire de contact */
+
+.formulaire{
+    margin: auto;
+}
+
+fieldset{
+    width:max-content;
+    height: max-content;
+}
+
+legend{
+    font-family: "Hanleypro";
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+input{
+    font-family: "Raleway";
+    font-size: 1rem;
+    margin: 1vh;
+    margin-top: 2vh;
+    padding: 5px;
+    padding-left: 0.5vw;
+    border: black solid 1px;
+    height: 4vh;
+    border-radius: 3px;
+}
+
+#nom{
+    /* width: 15vw; */
+    /* width: 300px; */
+    width: 15.6vw;
+    height: 40px;
+}
+
+#prenom{
+    width: 15.6vw;
+    height: 40px;
+}
+
+#email{
+    width: 32.5vw;
+    height: 40px;
+    /* width: 640px; */
+}
+
+textarea{
+    margin: 0;
+    font-family: "Raleway";
+    border: black solid 1px;
+    /* width: 100%; */
+    width: 33vw;
+    height: 20vh;
+    padding: 10px;
+    padding-left: 10px;
+    margin: 1vh;
+    margin-top: 2vh;
+    border-radius: 3px;
+    resize: none;
+}
+
+input[type=submit]{
+    font-family: "Raleway";
+    /* background-color: black; */
+    background-color: #D9B179;
+    border: transparent;
+    color: white;
+    margin-bottom: 2vh;
+    padding: 1vh;
+    width: 15vw;
+    border-radius: 3px;
+    height: 48px;
+
+}
+
+input[type=submit]:hover{
+    background-color: rgb(43, 43, 43);
+    /* color: black; */
+    border: black 2px solid;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

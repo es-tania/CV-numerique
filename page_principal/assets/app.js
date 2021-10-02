@@ -7,7 +7,6 @@ $(document).ready(function () {
         $(parallax).css('background-position-y', offset * 0.7 + 'px');
     })
 
-
     // Code pour faire l'effet texte qui s'écrit pour la partie "Qualité" (code récupéré sur Internet)
 
     class TextScramble {
@@ -76,8 +75,8 @@ $(document).ready(function () {
     }
 
     const phrases = [
-        'Déterminé',
-        'Investis',
+        'Déterminée',
+        'Investie',
         'Calme',
         'Polyvalente',
         'Organisée',
@@ -172,3 +171,5 @@ $(document).ready(function () {
     });
 
 })
+
+
